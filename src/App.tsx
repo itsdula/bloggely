@@ -5,9 +5,12 @@ import { ReactComponent as ViteLogo } from './assets/vite.svg';
 import { ReactComponent as TypescriptLogo } from './assets/typescript.svg';
 import { ReactComponent as ScssLogo } from './assets/scss.svg';
 import styles from './App.module.scss';
+import { BASE_URL, PROJECT_ID } from './env';
 
 function App() {
     const [count, setCount] = useState(0);
+    console.log('BASE_URL', BASE_URL);
+    console.log('PROJECT_ID', PROJECT_ID);
 
     return (
         <div className={styles.App}>
